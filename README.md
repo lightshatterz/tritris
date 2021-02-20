@@ -1,9 +1,2 @@
-# Tritris
-### Tetris with Triangles!
-Join the Discord! https://discord.gg/NUKWP6UCHF
-
-Watch the video!
-<br>
-[![Tritris video](http://img.youtube.com/vi/HMkfj1OJ08Q/0.jpg)](https://youtu.be/HMkfj1OJ08Q "I made Tetris with Triangles")
-
-Play the game! https://goel25.github.io/tritris
+# Tritris: Level Speed Timings Modification Fork
+This fork modifies the level speed timings so it's easier in lower levels and has a less steep transition to the killscreen from level 15.
