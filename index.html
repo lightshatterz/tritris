@@ -22,6 +22,8 @@
                 <br />
                 Use the pieces to fill as many lines as possible before the game
                 gets too fast and you top out!
+                
+                NOTE: THIS IS A FORK THAT MODIFIES LEVEL SPEED TIMINGS. DO NOT USE THAT TO SUBMIT TO THE LEADERBOARDS.
                 <br />
                 <br />
                 Click <button id="openTutorial" class="darkButton">How to Play</button> for strategies.
@@ -63,7 +65,7 @@
         <div id="play" class="box" style="position: absolute">
             <h1>Tritris</h1>
             <label>Level: </label>
-            <input id="level" type="number" value="0" min="0" max="29" />
+            <input id="level" type="number" value="0" min="0" max="30" />
             <br />
             <button id="newGame">New Game</button>
             <button id="practiceGame">Practice Game</button>
@@ -94,7 +96,7 @@
             <h3>Mechanics</h3>
             <p>
                 The mechanics are very similar to NES Tetris. It uses the same
-                DAS, entry delay, and level speed timings.<br />
+                DAS and entry delay. Level speed timings are adjusted.<br />
                 All of the pieces are made out of 3 connected right triangles.
                 There is also a white, single triangle piece which can be used
                 to fix holes in your stack. It will always come out 3 at a time.
