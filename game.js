@@ -14,8 +14,7 @@ class Game {
         this.alive = true;
 
         if (level < 0) level = 0;
-        if (level > 29) level = 29;
-        if (level >= 20 && level <= 28) level = 19; //Can only start on 0-19 or 29
+        if (level > 30) level = 30;
         this.startLevel = level;
         this.level = level;
         this.lines = 0;
@@ -60,21 +59,27 @@ class Game {
         this.spawnPiece(); //Make next piece current, and pick new next
 
         this.levelSpeeds = {
-            0: 48,
-            1: 43, //From https://tetris.wiki/Tetris_(NES,_Nintendo)
-            2: 38,
-            3: 33,
-            4: 28,
-            5: 23,
-            6: 18,
-            7: 13,
-            8: 8,
-            9: 6,
-            10: 5, //Level 10-12
-            13: 4, //13 - 15
-            16: 3, //16 - 18
-            19: 2, //19 - 28
-            29: 1, //29+
+            0: 60,
+            1: 54,
+            2: 48,
+            3: 42,
+            4: 36,
+            5: 30,
+            6: 24,
+            7: 18,
+            8: 15,
+            9: 12,
+            10: 11,
+            11: 10,
+            12: 9,
+            13: 8,
+            14: 7,
+            15: 6, //15 - 17
+            18: 5, //18 - 20
+            21: 4, //21 - 23
+            24: 3, //24 - 26
+            27: 2, //26 - 29
+            30: 1, //30+
         };
         for (let lvl of Object.keys(this.levelSpeeds)) {
             this.levelSpeeds[lvl] *= msPerFrame; //Make sure the are in the correct units
